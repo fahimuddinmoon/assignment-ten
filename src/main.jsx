@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('https://assignment-server-eta-one.vercel.app/products')
+        loader: () => fetch('https://assignment-server-mypvrx1zd-fahimmoons-projects.vercel.app/products')
       },
       {
         path: "/login",
@@ -40,12 +40,12 @@ const router = createBrowserRouter([
       {
         path: "/category",
         element: <Category></Category>,
-        loader: () => fetch('https://assignment-server-eta-one.vercel.app/products')
+        loader: () => fetch('https://assignment-server-mypvrx1zd-fahimmoons-projects.vercel.app/products')
       },
       {
         path: "/all equipment",
         element: <PrivateRoute><AllEquipment></AllEquipment></PrivateRoute>,
-        loader: () => fetch('https://assignment-server-eta-one.vercel.app/products')
+        loader: () => fetch('https://assignment-server-mypvrx1zd-fahimmoons-projects.vercel.app/products')
       },
       {
         path: "/add equipment",
@@ -54,12 +54,12 @@ const router = createBrowserRouter([
       {
         path: "/my equipment",
         element: <PrivateRoute><MyEquipment></MyEquipment></PrivateRoute>,
-        loader: () => fetch(`https://assignment-server-eta-one.vercel.app/product`)
+        loader: () => fetch(`https://assignment-server-mypvrx1zd-fahimmoons-projects.vercel.app/product`)
       },
       {
         path: "/all equipment/:id",
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader: ({params}) => fetch(`https://assignment-server-eta-one.vercel.app/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-server-mypvrx1zd-fahimmoons-projects.vercel.app/${params.id}`)
       },
     ]
   },
