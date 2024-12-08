@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active {
+  color:rgba(60, 37, 234, 0.953);
+font-size: large; 
+text-decoration: underline;
+}
+/* 
+body{
+  background-color: black;
+  color: white;
+} */
