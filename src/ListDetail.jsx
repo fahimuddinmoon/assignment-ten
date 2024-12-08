@@ -1,7 +1,7 @@
 
 
 const ListDetail = ({ data }) => {
-    console.log(data)
+    
     const { _id, image, ItemName, CategoryName, Description, price, rating, Customization, ProcessingTime, StockStatus, email, UserName } = data
     return (
         <div className="card  shadow-xl">

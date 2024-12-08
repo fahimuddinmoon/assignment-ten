@@ -4,7 +4,7 @@ import ListDetail from "./ListDetail";
 
 const MyEquipment = () => {
     const allData = useLoaderData()
-    console.log(allData)
+    
     return (
         <div className="w-10/12 mx-auto px-4">
             <h2 className='text-4xl font-bold  p text-center py-8'>My Equipment</h2>

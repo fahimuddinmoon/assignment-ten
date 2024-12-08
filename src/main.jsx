@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:4000/products')
+        loader: () => fetch('https://assignment-server-eta-one.vercel.app/products')
       },
       {
         path: "/login",
@@ -40,12 +40,12 @@ const router = createBrowserRouter([
       {
         path: "/category",
         element: <Category></Category>,
-        loader: () => fetch('http://localhost:4000/products')
+        loader: () => fetch('https://assignment-server-eta-one.vercel.app/products')
       },
       {
         path: "/all equipment",
         element: <PrivateRoute><AllEquipment></AllEquipment></PrivateRoute>,
-        loader: () => fetch('http://localhost:4000/products')
+        loader: () => fetch('https://assignment-server-eta-one.vercel.app/products')
       },
       {
         path: "/add equipment",
@@ -54,12 +54,12 @@ const router = createBrowserRouter([
       {
         path: "/my equipment",
         element: <PrivateRoute><MyEquipment></MyEquipment></PrivateRoute>,
-        loader: () => fetch(`http://localhost:4000/product`)
+        loader: () => fetch(`https://assignment-server-eta-one.vercel.app/product`)
       },
       {
         path: "/all equipment/:id",
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:4000/products/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-server-eta-one.vercel.app/${params.id}`)
       },
     ]
   },
