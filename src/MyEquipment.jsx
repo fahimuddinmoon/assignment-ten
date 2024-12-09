@@ -10,7 +10,7 @@ const MyEquipment = () => {
             <h2 className='text-4xl font-bold  p text-center py-8'>My Equipment</h2>
             <div className="sm:grid sm:grid-cols-2 gap-7">
                {
-                allData.map(data => <ListDetail key={data._id} data={data}></ListDetail>)
+                 allData.map(data => <ListDetail key={data._id} data={data}></ListDetail>)
                }
             </div>
         </div>

@@ -14,7 +14,7 @@ const ListDetail = ({ data }) => {
             <div className="card-body items-center text-center">
                 <h2 className="text-2xl font-bold mb-2">Name :- {ItemName}</h2>
                 <p className="text-lg font-bold mb-2">Category :- {CategoryName}</p>
-                <p className="text-sm font-semibold text-gray-700 mb-2">Information :- {Description.slice(0, 149)}</p>
+                <p className="text-sm font-semibold text-gray-700 mb-2">Information :- {Description}</p>
                 <p className="text-xl font-bold mb-2">Price :- {price} tk</p>
                 <p className="text-xl font-bold mb-2"> Customization :- {Customization} </p>
                 <p className="text-xl font-bold mb-2">ProcessingTime :- {ProcessingTime} </p>
