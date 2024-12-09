@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       {
         path: "/my equipment",
         element: <PrivateRoute><MyEquipment></MyEquipment></PrivateRoute>,
-        loader: () => fetch(`https://assignment-server-sepia.vercel.app/product`)
+        loader: () => fetch(`https://assignment-server-sepia.vercel.app/myProduct`)
       },
       {
         path: "/all equipment/:id",

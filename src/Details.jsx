@@ -7,7 +7,7 @@ const Details = () => {
     const info = useLoaderData()
     const { _id,image, ItemName, CategoryName, Description, price, rating, Customization, ProcessingTime, StockStatus, email, UserName } = info
     const handleAddCurt = () => {
-        fetch('http://localhost:4000/product', {
+        fetch('https://assignment-server-sepia.vercel.app/myProduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

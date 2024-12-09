@@ -31,7 +31,7 @@ const Register = () => {
                 const user = result.user
                 setUser(user)
                 const newUser = { name, email, }
-                fetch('http://localhost:4000/users', {
+                fetch('https://assignment-server-sepia.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

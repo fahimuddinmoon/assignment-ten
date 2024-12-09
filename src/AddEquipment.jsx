@@ -23,7 +23,7 @@ const AddEquipment = () => {
         const UserName = e.target.UserName.value
         const products = { image, ItemName, CategoryName, Description, price, rating, Customization, ProcessingTime, StockStatus, email, UserName }
 
-        fetch('http://localhost:4000/products', {
+        fetch('https://assignment-server-sepia.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
